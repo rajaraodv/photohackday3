@@ -1,0 +1,25 @@
+/* set up the album cover div, with position: relative so that the play button positioning works */
+.album {
+    position: relative;
+    width: 260px;
+    float:left;
+}
+
+/* make the play link a block element, use text-replacement for a play button graphic, and hide it with display: none */
+.album a.play {
+    display: none;
+    position: absolute;
+    left: 230px;
+    top: -7px;
+    width: 32px;
+    height: 32px;
+    background: transparent url(button-remove.png) no-repeat;
+    overflow: hidden;
+}
+
+
+/* finally, on hover over the album cover, display the play link */
+.album:hover a.play {
+    display: block;
+}
+
